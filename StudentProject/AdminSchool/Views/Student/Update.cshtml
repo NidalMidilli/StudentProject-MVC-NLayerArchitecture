@@ -1,0 +1,50 @@
+﻿@using EntityLayer
+@model EntityLayer.Student
+
+
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+                        <div class="col-12 grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        STUDENT UPDATE PAGE
+                                    </h4>
+                                    <form asp-action="Update" asp-controller="Student" method="post">
+                                        <div style="display:none"class="mb-3">
+                                            <label for="studentId" class="form-label">Student Id</label>
+                                            <input readonly asp-for="studentId" type="text" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="studentName" class="form-label">Student Name</label>
+                                            <input  asp-for="studentName" type="text" class="form-control">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="studentSurname" class="form-label">Student Surname</label>
+                                            <input type="text" class="form-control" asp-for="studentSurname">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">UPDATE STUDENT</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- content-wrapper ends -->
+                <!-- partial:partials/_footer.html -->
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        
+
+
+
+
+
+
+
+
+
